@@ -1,6 +1,105 @@
-h1,h3,ol {
+h1,h3 {
     text-align: center;
+    font-family: Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    
 }
 body {
-    background-color:rgb(233, 100, 100);;
+    
+   padding:0;
+    margin:0;
+    background-color: #f5b3d6;
+overflow-x: hidden;
+}
+
+.teto-text {
+    text-align:justify;
+    margin:auto;
+   font-family:'Quicksand', sans-serif;
+   font-size: 18px;
+  
+}
+.box1 {
+    margin: 40px;
+    width:300px;
+ background-color: #fff7f9;
+}
+.topbar {
+    width:100%;
+    padding:1rem;
+    display:flex;
+    text-align: center;
+    background-color:beige;
+    /*position: fixed;*/
+   
+   
+
+    
+}
+.page{
+      padding:2rem;
+    padding-left: 6rem;
+    padding-right:6rem;
+    z-index: 1;
+    top:0;
+
+}
+.topbar-img img {
+    width:50px;
+    cursor: pointer;
+}
+
+.dropdown {
+color: #000000;
+background-color:#ffffff;
+cursor:pointer;
+border:none;
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+font-size: 16px;
+
+
+}
+.dropdown:hover, .active {
+    color: black;
+    background-color: #fadde5;
+   
+   
+}
+
+.extension{
+   max-height: 0;
+    margin:10px;
+     transition: max-height 0.2s ease-out;
+     overflow:hidden;
+}
+
+.grid{
+    display:grid;
+gap:1rem;
+   margin-bottom: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+}
+
+.test{
+    display:flex;
+    flex-direction: column;
+}
+
+.row{
+   display:flex;
+}
+.columm{
+    margin-left: 50px;
+    flex:34%;
+}
+.columm > img{
+ margin-top: 15%;
+  width:220px;
+  border-style:double;
+}
+
+br{
+    margin-bottom:20px;
+}
+hr{
+    border-color: #2e2e2e;
 }
