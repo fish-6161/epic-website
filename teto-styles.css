@@ -15,7 +15,7 @@ overflow-x: hidden;
     text-align:justify;
     margin:auto;
    font-family:'Quicksand', sans-serif;
-   font-size: 18px;
+   font-size: 1.5rem;
   
 }
 .box1 {
@@ -27,14 +27,12 @@ overflow-x: hidden;
     width:100%;
     padding:1rem;
     display:flex;
-    text-align: center;
-    background-color:beige;
-    /*position: fixed;*/
-   
-   
-
-    
+   gap:0.5rem;
+    background-color:rgb(245, 245, 220);
+    align-items: center;
+  justify-content: flex-start;
 }
+
 .page{
       padding:2rem;
     padding-left: 6rem;
@@ -46,8 +44,11 @@ overflow-x: hidden;
 .topbar-img img {
     width:50px;
     cursor: pointer;
+    height:50px
 }
-
+.topbar-img{
+    border-right: 2px solid #2e2e2e;
+}
 .dropdown {
 color: #000000;
 background-color:#ffffff;
@@ -87,11 +88,11 @@ gap:1rem;
 .row{
    display:flex;
 }
-.columm{
-    margin-left: 50px;
+.column{
+    margin-left: 4rem;
     flex:34%;
 }
-.columm > img{
+.column > img{
  margin-top: 15%;
   width:220px;
   border-style:double;
@@ -102,4 +103,38 @@ br{
 }
 hr{
     border-color: #2e2e2e;
+}
+
+body.light-mode {
+    background-color: #f5b3d6;
+    color: #2e2e2e;
+   
+}
+
+body.dark-mode {
+    background-color: #2e2e2e;
+    color: #f5b3d6;
+border-color: #ffffff;
+}
+
+body.light-mode hr{
+ border-color: #2e2e2e;
+}
+body.dark-mode hr{
+ border-color: #ffffff;
+}
+.sitecolor{
+    background:none;
+    border:none;
+}
+#imageToggle{
+    width:2rem;
+    height:2rem;
+    cursor:pointer;
+}
+
+.sitecolor{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
 }
